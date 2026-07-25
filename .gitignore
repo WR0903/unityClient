@@ -1,0 +1,76 @@
+# ======================
+# Unity
+# ======================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Asset meta data should only be ignored when the temporary csproj and sln files are not being generated
+# Uncomment if needed
+# *.csproj
+# *.sln
+
+# Unity generated asides
+*.unityproj
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D generated meta files (keep .meta for assets in Assets/)
+# *.pidb.meta
+# *.mdb.meta
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.zip
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Visual Studio / Rider / VS Code cache directories
+.vs/
+.idea/
+.vscode/
+
+# ======================
+# WPF / .NET (editor)
+# ======================
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ======================
+# Logs
+# ======================
+*.log
