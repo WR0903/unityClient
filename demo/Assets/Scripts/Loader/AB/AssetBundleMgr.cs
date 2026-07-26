@@ -254,7 +254,7 @@ namespace GEngine {
         private void Update( ) {
             // 下载量充足，增加新的下载
             if ( _loadingQueue.Count < MaxWorkingCnt ) {
-                int cnt = MaxWorkingCnt - _waitingQueue.Count;
+                int cnt = MaxWorkingCnt - _loadingQueue.Count;
 
                 for ( int i = 0; i < cnt; i ++ ) {
                     if ( _waitingQueue.Count <= 0 )
@@ -280,6 +280,8 @@ namespace GEngine {
                     continue;
                 }
 
+                // 立即标记为加载中，防止下一帧重复启动协程
+                info.State = LoadStateType.Loding;
                 StartCoroutine( OnAssetLoadStart( info ) );
             }
 
@@ -316,11 +318,7 @@ namespace GEngine {
 
             var url = MakeUrl( info.Url );
             UnityWebRequest req = UnityWebRequestAssetBundle.GetAssetBundle( url );
-            req.SendWebRequest();
-            while ( !req.isDone ) {
-                info.Progress = req.downloadProgress;
-                yield return null;
-            }
+            yield return req.SendWebRequest();
 
             // 加载失败了
             if ( req.result != UnityWebRequest.Result.Success ) {

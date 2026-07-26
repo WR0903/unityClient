@@ -14,6 +14,7 @@ namespace GEngine
         public List<Proto.Vector3> CornerPoints = new List<Proto.Vector3>();
 
         private Vector3 _nextPosition = Vector3.zero;
+        private bool _isMoving = false;
 
         private RoleAppear _role;
         public RoleAppear Role => _role;
@@ -64,34 +65,45 @@ namespace GEngine
                 navMeshAgent.SetDestination(targetPosition);
                 CornerPoints.Clear();
 
-                // 切换到移动状态
+                // 标记正在移动，切换到移动状态
+                _isMoving = true;
                 _role?.ChangeState(RoleStateType.Move);
             }
 
-            if (!navMeshAgent.hasPath)
+            // 正在移动中，检查是否到达目的地
+            if (_isMoving)
             {
-                // 没有路径，切换回站立状态
-                _role?.ChangeState(RoleStateType.Stand);
-                return;
+                // 路径还在计算中或正在移动，不切回站立
+                if (navMeshAgent.pathPending)
+                    return;
+
+                if (navMeshAgent.hasPath)
+                {
+                    // 朝向下一个路径点
+                    Vector3 comparePos;
+                    if (navMeshAgent.path.corners.Length > 2)
+                    {
+                        comparePos = navMeshAgent.path.corners[1];
+                    }
+                    else
+                    {
+                        comparePos = navMeshAgent.destination;
+                    }
+
+                    if (_nextPosition != comparePos)
+                    {
+                        _nextPosition = comparePos;
+                        gameObject.transform.LookAt(comparePos);
+                    }
+
+                    // 检查是否到达目的地（剩余距离小于停止距离）
+                    if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+                    {
+                        _isMoving = false;
+                        _role?.ChangeState(RoleStateType.Stand);
+                    }
+                }
             }
-
-            Vector3 comparePos;
-            if (navMeshAgent.path.corners.Length > 2)
-            {
-                comparePos = navMeshAgent.path.corners[1];
-            }
-            else
-            {
-                comparePos = navMeshAgent.destination;
-            }
-
-            if (_nextPosition == comparePos)
-                return;
-
-            _nextPosition = comparePos;
-
-            gameObject.transform.LookAt(comparePos);
-            //GameLogger.GetInstance().Debug($"player position:{gameObject.transform.position}, destination position:{navMeshAgent.destination}, nextPosition:{navMeshAgent.nextPosition}, comparePos:{comparePos}");
         }
     }
 }
