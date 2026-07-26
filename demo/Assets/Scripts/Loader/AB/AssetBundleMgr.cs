@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace GEngine {
     // 加载中的状态
@@ -314,22 +315,23 @@ namespace GEngine {
             yield return null;
 
             var url = MakeUrl( info.Url );
-            WWW www = new WWW( url );
-            while ( !www.isDone ) {
-                info.Progress = www.progress;
+            UnityWebRequest req = UnityWebRequestAssetBundle.GetAssetBundle( url );
+            req.SendWebRequest();
+            while ( !req.isDone ) {
+                info.Progress = req.downloadProgress;
                 yield return null;
             }
 
             // 加载失败了
-            if ( !string.IsNullOrEmpty( www.error ) ) {
-                GameLogger.GetInstance( ).Trace( "AssetBundle CreateFromWWW failed: {0}\n\t{1}", url, www.error );
+            if ( req.result != UnityWebRequest.Result.Success ) {
+                GameLogger.GetInstance( ).Trace( "AssetBundle load failed: {0}\n\t{1}", url, req.error );
                 UrlLoadCompleted( info, null );
                 yield break;
             }
 
-            AssetBundle ab = www.assetBundle;
+            AssetBundle ab = DownloadHandlerAssetBundle.GetContent( req );
             if ( ab == null ) {
-                GameLogger.GetInstance( ).Trace( "AssetBundle CreateFromWWW failed: {0}\n\tab == null", url );
+                GameLogger.GetInstance( ).Trace( "AssetBundle load failed: {0}\n\tab == null", url );
                 UrlLoadCompleted( info, null );
                 yield break;
             }
