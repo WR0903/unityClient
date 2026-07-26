@@ -1,52 +1,52 @@
 ManifestFileVersion: 0
-CRC: 4158236437
+CRC: 4247026904
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: scenes/login.win
-      Dependencies: {}
-    Info_1:
-      Name: scenes/roles.win
-      Dependencies: {}
-    Info_2:
-      Name: scenes/empty.win
-      Dependencies: {}
-    Info_3:
-      Name: scenes/jiangxia.win
-      Dependencies: {}
-    Info_4:
-      Name: ui/modal/0.win
-      Dependencies: {}
-    Info_5:
-      Name: ui/roles/select_character.win
-      Dependencies: {}
-    Info_6:
-      Name: ui/canvas.win
-      Dependencies: {}
-    Info_7:
       Name: ui/modal/1.win
       Dependencies: {}
+    Info_1:
+      Name: ui/canvas-bg.win
+      Dependencies: {}
+    Info_2:
+      Name: ui/roles/create.win
+      Dependencies: {}
+    Info_3:
+      Name: scenes/login.win
+      Dependencies: {}
+    Info_4:
+      Name: scenes/roles.win
+      Dependencies: {}
+    Info_5:
+      Name: ui/loadingbar.win
+      Dependencies: {}
+    Info_6:
+      Name: ui/roles/select_character.win
+      Dependencies: {}
+    Info_7:
+      Name: ui/canvas.win
+      Dependencies: {}
     Info_8:
-      Name: models/player/01.win
+      Name: models/player/02.win
       Dependencies: {}
     Info_9:
       Name: ui/login.win
       Dependencies: {}
     Info_10:
-      Name: ui/roles/select.win
+      Name: scenes/jiangxia.win
       Dependencies: {}
     Info_11:
-      Name: ui/canvas-bg.win
+      Name: scenes/empty.win
       Dependencies: {}
     Info_12:
-      Name: ui/roles/create.win
+      Name: ui/roles/select.win
       Dependencies: {}
     Info_13:
-      Name: models/player/02.win
+      Name: ui/modal/0.win
       Dependencies: {}
     Info_14:
-      Name: ui/modal/2.win
+      Name: models/player/01.win
       Dependencies: {}
     Info_15:
-      Name: ui/loadingbar.win
+      Name: ui/modal/2.win
       Dependencies: {}

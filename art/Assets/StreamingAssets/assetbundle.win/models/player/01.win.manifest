@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2764898813
+CRC: 2996151931
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ae8b52eee3fcff2a69ed8f612e471f26
+    Hash: 367e20d101cc1c9ef2128b56415dec72
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a22ba75345d592142d92c2f365e9cff6
+    Hash: c1f82ea0e31a212d7c6002c1c0b85d94
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 367e20d101cc1c9ef2128b56415dec72
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,6 +30,7 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Avatar/Player/male/prefab/zhaoyun.prefab
 Dependencies: []

@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 126930915
+CRC: 4178164561
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1ed1932a461d8a527812a728599943ae
+    Hash: e1da3fdaf3c2b8bff3fe51b3d7432336
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 7b32d945ecce21f45ec00c6ca77b1bb6
+    Hash: 653ba294f91f35deda29c0e65cdeed24
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e1da3fdaf3c2b8bff3fe51b3d7432336
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -18,15 +21,15 @@ ClassTypes:
 - Class: 48
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
-  Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
 - Class: 114
-  Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
-  Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
 - Class: 114
-  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -37,6 +40,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 224
   Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 Assets:
 - Assets/UI/Prefabs/Loading Bar.prefab
 Dependencies: []

@@ -99,7 +99,7 @@ namespace GEngine
             webRequest.SetRequestHeader("Content-Type", "application/json;charset=utf-8");
             webRequest.downloadHandler = new DownloadHandlerBuffer();
             yield return webRequest.SendWebRequest();
-            if (webRequest.isHttpError || webRequest.isNetworkError)
+            if (webRequest.result != UnityWebRequest.Result.Success)
             {
                 UnityEngine.Debug.Log(webRequest.error);
                 UiMgr.GetInstance().OpenModalBox1("登录消息", $"{webRequest.error}", Show);

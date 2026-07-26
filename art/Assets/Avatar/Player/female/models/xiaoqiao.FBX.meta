@@ -1,175 +1,509 @@
 fileFormatVersion: 2
 guid: 9e38d6774fd30134280a8597554aa5e3
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Bip01 Footsteps
-    100002: Bip01 HeadNub
-    100004: Bip01 L Finger0Nub
-    100006: Bip01 L Finger1Nub
-    100008: Bip01 L Finger2Nub
-    100010: Bip01 L Finger3Nub
-    100012: Bip01 L Toe0Nub
-    100014: Bip01 R Finger0Nub
-    100016: Bip01 R Finger1Nub
-    100018: Bip01 R Finger2Nub
-    100020: Bip01 R Finger3Nub
-    100022: Bip01 R Toe0Nub
-    100024: Bone01
-    100026: Bone02
-    100028: Bone03
-    100030: Bone04
-    100032: Bone05
-    100034: Bone06
-    100036: Bone07
-    100038: Bone08
-    100040: Bone09
-    100042: Bone11
-    100044: Bone12
-    100046: Bone18
-    100048: Bone25
-    100050: Bone26
-    100052: Bone29
-    100054: Bone42
-    100056: Bone45
-    100058: Bone46
-    100060: Bone47
-    100062: Bone48
-    100064: Bone49
-    100066: Bone50
-    100068: Bone51
-    100070: Bone52
-    100072: Bone56
-    100074: Bone57
-    100076: Bone58
-    100078: Bone59
-    100080: Bone60
-    100082: Bone61
-    100084: p_m_calfl
-    100086: p_m_calfr
-    100088: p_m_center
-    100090: p_m_claviclel
-    100092: p_m_clavicler
-    100094: p_m_finger11l
-    100096: p_m_finger11r
-    100098: p_m_finger21l
-    100100: p_m_finger21r
-    100102: p_m_finger31l
-    100104: p_m_finger31r
-    100106: p_m_finger41l
-    100108: p_m_finger41r
-    100110: p_m_footl
-    100112: p_m_footr
-    100114: p_m_forearml
-    100116: p_m_forearmr
-    100118: p_m_handl
-    100120: p_m_handr
-    100122: p_m_head
-    100124: p_m_neck
-    100126: p_m_root
-    100128: p_m_shoulderl
-    100130: p_m_shoulderr
-    100132: p_m_spline1
-    100134: p_m_spline2
-    100136: p_m_spline3
-    100138: p_m_thighl
-    100140: p_m_thighr
-    100142: p_m_toel
-    100144: p_m_toer
-    100146: p_m_upperarml
-    100148: p_m_upperarmr
-    100150: p_m_weaponl
-    100152: p_m_weaponr
-    100154: //RootNode
-    100156: xiaoqiao_body01
-    100158: xiaoqiao_face01
-    400000: Bip01 Footsteps
-    400002: Bip01 HeadNub
-    400004: Bip01 L Finger0Nub
-    400006: Bip01 L Finger1Nub
-    400008: Bip01 L Finger2Nub
-    400010: Bip01 L Finger3Nub
-    400012: Bip01 L Toe0Nub
-    400014: Bip01 R Finger0Nub
-    400016: Bip01 R Finger1Nub
-    400018: Bip01 R Finger2Nub
-    400020: Bip01 R Finger3Nub
-    400022: Bip01 R Toe0Nub
-    400024: Bone01
-    400026: Bone02
-    400028: Bone03
-    400030: Bone04
-    400032: Bone05
-    400034: Bone06
-    400036: Bone07
-    400038: Bone08
-    400040: Bone09
-    400042: Bone11
-    400044: Bone12
-    400046: Bone18
-    400048: Bone25
-    400050: Bone26
-    400052: Bone29
-    400054: Bone42
-    400056: Bone45
-    400058: Bone46
-    400060: Bone47
-    400062: Bone48
-    400064: Bone49
-    400066: Bone50
-    400068: Bone51
-    400070: Bone52
-    400072: Bone56
-    400074: Bone57
-    400076: Bone58
-    400078: Bone59
-    400080: Bone60
-    400082: Bone61
-    400084: p_m_calfl
-    400086: p_m_calfr
-    400088: p_m_center
-    400090: p_m_claviclel
-    400092: p_m_clavicler
-    400094: p_m_finger11l
-    400096: p_m_finger11r
-    400098: p_m_finger21l
-    400100: p_m_finger21r
-    400102: p_m_finger31l
-    400104: p_m_finger31r
-    400106: p_m_finger41l
-    400108: p_m_finger41r
-    400110: p_m_footl
-    400112: p_m_footr
-    400114: p_m_forearml
-    400116: p_m_forearmr
-    400118: p_m_handl
-    400120: p_m_handr
-    400122: p_m_head
-    400124: p_m_neck
-    400126: p_m_root
-    400128: p_m_shoulderl
-    400130: p_m_shoulderr
-    400132: p_m_spline1
-    400134: p_m_spline2
-    400136: p_m_spline3
-    400138: p_m_thighl
-    400140: p_m_thighr
-    400142: p_m_toel
-    400144: p_m_toer
-    400146: p_m_upperarml
-    400148: p_m_upperarmr
-    400150: p_m_weaponl
-    400152: p_m_weaponr
-    400154: //RootNode
-    400156: xiaoqiao_body01
-    400158: xiaoqiao_face01
-    2100000: xiaoqiao_body01
-    2100002: xiaoqiao_face01
-    4300000: xiaoqiao_body01
-    4300002: xiaoqiao_face01
-    9500000: //RootNode
-    13700000: xiaoqiao_body01
-    13700002: xiaoqiao_face01
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bip01 Footsteps
+  - first:
+      1: 100002
+    second: Bip01 HeadNub
+  - first:
+      1: 100004
+    second: Bip01 L Finger0Nub
+  - first:
+      1: 100006
+    second: Bip01 L Finger1Nub
+  - first:
+      1: 100008
+    second: Bip01 L Finger2Nub
+  - first:
+      1: 100010
+    second: Bip01 L Finger3Nub
+  - first:
+      1: 100012
+    second: Bip01 L Toe0Nub
+  - first:
+      1: 100014
+    second: Bip01 R Finger0Nub
+  - first:
+      1: 100016
+    second: Bip01 R Finger1Nub
+  - first:
+      1: 100018
+    second: Bip01 R Finger2Nub
+  - first:
+      1: 100020
+    second: Bip01 R Finger3Nub
+  - first:
+      1: 100022
+    second: Bip01 R Toe0Nub
+  - first:
+      1: 100024
+    second: Bone01
+  - first:
+      1: 100026
+    second: Bone02
+  - first:
+      1: 100028
+    second: Bone03
+  - first:
+      1: 100030
+    second: Bone04
+  - first:
+      1: 100032
+    second: Bone05
+  - first:
+      1: 100034
+    second: Bone06
+  - first:
+      1: 100036
+    second: Bone07
+  - first:
+      1: 100038
+    second: Bone08
+  - first:
+      1: 100040
+    second: Bone09
+  - first:
+      1: 100042
+    second: Bone11
+  - first:
+      1: 100044
+    second: Bone12
+  - first:
+      1: 100046
+    second: Bone18
+  - first:
+      1: 100048
+    second: Bone25
+  - first:
+      1: 100050
+    second: Bone26
+  - first:
+      1: 100052
+    second: Bone29
+  - first:
+      1: 100054
+    second: Bone42
+  - first:
+      1: 100056
+    second: Bone45
+  - first:
+      1: 100058
+    second: Bone46
+  - first:
+      1: 100060
+    second: Bone47
+  - first:
+      1: 100062
+    second: Bone48
+  - first:
+      1: 100064
+    second: Bone49
+  - first:
+      1: 100066
+    second: Bone50
+  - first:
+      1: 100068
+    second: Bone51
+  - first:
+      1: 100070
+    second: Bone52
+  - first:
+      1: 100072
+    second: Bone56
+  - first:
+      1: 100074
+    second: Bone57
+  - first:
+      1: 100076
+    second: Bone58
+  - first:
+      1: 100078
+    second: Bone59
+  - first:
+      1: 100080
+    second: Bone60
+  - first:
+      1: 100082
+    second: Bone61
+  - first:
+      1: 100084
+    second: p_m_calfl
+  - first:
+      1: 100086
+    second: p_m_calfr
+  - first:
+      1: 100088
+    second: p_m_center
+  - first:
+      1: 100090
+    second: p_m_claviclel
+  - first:
+      1: 100092
+    second: p_m_clavicler
+  - first:
+      1: 100094
+    second: p_m_finger11l
+  - first:
+      1: 100096
+    second: p_m_finger11r
+  - first:
+      1: 100098
+    second: p_m_finger21l
+  - first:
+      1: 100100
+    second: p_m_finger21r
+  - first:
+      1: 100102
+    second: p_m_finger31l
+  - first:
+      1: 100104
+    second: p_m_finger31r
+  - first:
+      1: 100106
+    second: p_m_finger41l
+  - first:
+      1: 100108
+    second: p_m_finger41r
+  - first:
+      1: 100110
+    second: p_m_footl
+  - first:
+      1: 100112
+    second: p_m_footr
+  - first:
+      1: 100114
+    second: p_m_forearml
+  - first:
+      1: 100116
+    second: p_m_forearmr
+  - first:
+      1: 100118
+    second: p_m_handl
+  - first:
+      1: 100120
+    second: p_m_handr
+  - first:
+      1: 100122
+    second: p_m_head
+  - first:
+      1: 100124
+    second: p_m_neck
+  - first:
+      1: 100126
+    second: p_m_root
+  - first:
+      1: 100128
+    second: p_m_shoulderl
+  - first:
+      1: 100130
+    second: p_m_shoulderr
+  - first:
+      1: 100132
+    second: p_m_spline1
+  - first:
+      1: 100134
+    second: p_m_spline2
+  - first:
+      1: 100136
+    second: p_m_spline3
+  - first:
+      1: 100138
+    second: p_m_thighl
+  - first:
+      1: 100140
+    second: p_m_thighr
+  - first:
+      1: 100142
+    second: p_m_toel
+  - first:
+      1: 100144
+    second: p_m_toer
+  - first:
+      1: 100146
+    second: p_m_upperarml
+  - first:
+      1: 100148
+    second: p_m_upperarmr
+  - first:
+      1: 100150
+    second: p_m_weaponl
+  - first:
+      1: 100152
+    second: p_m_weaponr
+  - first:
+      1: 100154
+    second: //RootNode
+  - first:
+      1: 100156
+    second: xiaoqiao_body01
+  - first:
+      1: 100158
+    second: xiaoqiao_face01
+  - first:
+      4: 400000
+    second: Bip01 Footsteps
+  - first:
+      4: 400002
+    second: Bip01 HeadNub
+  - first:
+      4: 400004
+    second: Bip01 L Finger0Nub
+  - first:
+      4: 400006
+    second: Bip01 L Finger1Nub
+  - first:
+      4: 400008
+    second: Bip01 L Finger2Nub
+  - first:
+      4: 400010
+    second: Bip01 L Finger3Nub
+  - first:
+      4: 400012
+    second: Bip01 L Toe0Nub
+  - first:
+      4: 400014
+    second: Bip01 R Finger0Nub
+  - first:
+      4: 400016
+    second: Bip01 R Finger1Nub
+  - first:
+      4: 400018
+    second: Bip01 R Finger2Nub
+  - first:
+      4: 400020
+    second: Bip01 R Finger3Nub
+  - first:
+      4: 400022
+    second: Bip01 R Toe0Nub
+  - first:
+      4: 400024
+    second: Bone01
+  - first:
+      4: 400026
+    second: Bone02
+  - first:
+      4: 400028
+    second: Bone03
+  - first:
+      4: 400030
+    second: Bone04
+  - first:
+      4: 400032
+    second: Bone05
+  - first:
+      4: 400034
+    second: Bone06
+  - first:
+      4: 400036
+    second: Bone07
+  - first:
+      4: 400038
+    second: Bone08
+  - first:
+      4: 400040
+    second: Bone09
+  - first:
+      4: 400042
+    second: Bone11
+  - first:
+      4: 400044
+    second: Bone12
+  - first:
+      4: 400046
+    second: Bone18
+  - first:
+      4: 400048
+    second: Bone25
+  - first:
+      4: 400050
+    second: Bone26
+  - first:
+      4: 400052
+    second: Bone29
+  - first:
+      4: 400054
+    second: Bone42
+  - first:
+      4: 400056
+    second: Bone45
+  - first:
+      4: 400058
+    second: Bone46
+  - first:
+      4: 400060
+    second: Bone47
+  - first:
+      4: 400062
+    second: Bone48
+  - first:
+      4: 400064
+    second: Bone49
+  - first:
+      4: 400066
+    second: Bone50
+  - first:
+      4: 400068
+    second: Bone51
+  - first:
+      4: 400070
+    second: Bone52
+  - first:
+      4: 400072
+    second: Bone56
+  - first:
+      4: 400074
+    second: Bone57
+  - first:
+      4: 400076
+    second: Bone58
+  - first:
+      4: 400078
+    second: Bone59
+  - first:
+      4: 400080
+    second: Bone60
+  - first:
+      4: 400082
+    second: Bone61
+  - first:
+      4: 400084
+    second: p_m_calfl
+  - first:
+      4: 400086
+    second: p_m_calfr
+  - first:
+      4: 400088
+    second: p_m_center
+  - first:
+      4: 400090
+    second: p_m_claviclel
+  - first:
+      4: 400092
+    second: p_m_clavicler
+  - first:
+      4: 400094
+    second: p_m_finger11l
+  - first:
+      4: 400096
+    second: p_m_finger11r
+  - first:
+      4: 400098
+    second: p_m_finger21l
+  - first:
+      4: 400100
+    second: p_m_finger21r
+  - first:
+      4: 400102
+    second: p_m_finger31l
+  - first:
+      4: 400104
+    second: p_m_finger31r
+  - first:
+      4: 400106
+    second: p_m_finger41l
+  - first:
+      4: 400108
+    second: p_m_finger41r
+  - first:
+      4: 400110
+    second: p_m_footl
+  - first:
+      4: 400112
+    second: p_m_footr
+  - first:
+      4: 400114
+    second: p_m_forearml
+  - first:
+      4: 400116
+    second: p_m_forearmr
+  - first:
+      4: 400118
+    second: p_m_handl
+  - first:
+      4: 400120
+    second: p_m_handr
+  - first:
+      4: 400122
+    second: p_m_head
+  - first:
+      4: 400124
+    second: p_m_neck
+  - first:
+      4: 400126
+    second: p_m_root
+  - first:
+      4: 400128
+    second: p_m_shoulderl
+  - first:
+      4: 400130
+    second: p_m_shoulderr
+  - first:
+      4: 400132
+    second: p_m_spline1
+  - first:
+      4: 400134
+    second: p_m_spline2
+  - first:
+      4: 400136
+    second: p_m_spline3
+  - first:
+      4: 400138
+    second: p_m_thighl
+  - first:
+      4: 400140
+    second: p_m_thighr
+  - first:
+      4: 400142
+    second: p_m_toel
+  - first:
+      4: 400144
+    second: p_m_toer
+  - first:
+      4: 400146
+    second: p_m_upperarml
+  - first:
+      4: 400148
+    second: p_m_upperarmr
+  - first:
+      4: 400150
+    second: p_m_weaponl
+  - first:
+      4: 400152
+    second: p_m_weaponr
+  - first:
+      4: 400154
+    second: //RootNode
+  - first:
+      4: 400156
+    second: xiaoqiao_body01
+  - first:
+      4: 400158
+    second: xiaoqiao_face01
+  - first:
+      21: 2100000
+    second: xiaoqiao_body01
+  - first:
+      21: 2100002
+    second: xiaoqiao_face01
+  - first:
+      43: 4300000
+    second: xiaoqiao_body01
+  - first:
+      43: 4300002
+    second: xiaoqiao_face01
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: xiaoqiao_body01
+  - first:
+      137: 13700002
+    second: xiaoqiao_face01
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -177,7 +511,7 @@ ModelImporter:
       name: xiaoqiao_body01
     second: {instanceID: 0}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 0
@@ -186,6 +520,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -210,25 +545,36 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -237,10 +583,12 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips:
+  - eb3eb79284c96c144bb2a2da3d401653
+  - d593742ce1a0a5243a571e0af84c2f1b
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -250,13 +598,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

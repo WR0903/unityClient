@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2014096470
+CRC: 3983221629
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0fd79ba9ec981ae4bd330ca3a45b53ee
+    Hash: ce4035db7cee9c896789c21ee75eb499
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a22ba75345d592142d92c2f365e9cff6
+    Hash: c1f82ea0e31a212d7c6002c1c0b85d94
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: ce4035db7cee9c896789c21ee75eb499
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,6 +30,7 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Avatar/Player/female/prefab/xiaoqiao.prefab
 Dependencies: []

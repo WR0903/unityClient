@@ -29,8 +29,7 @@ namespace GEngine
             // 创建EventSystem（UI事件）
             var go = new GameObject("EventSystem");
             go.AddComponent<UnityEngine.EventSystems.EventSystem>();
-            var inputMofule = go.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
-            inputMofule.forceModuleActive = true;
+            go.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
             DontDestroyOnLoad(go);
 
             // 事件分发

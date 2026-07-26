@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2208885105
+CRC: 1779388953
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 8cbaca66b71236ed38f8d11455387489
+    Hash: 9fcb75133d81a088f1f17cfa466aa87f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d7f41c5dd362855fe6d8b3c2b0bfd3a5
+    Hash: 55f0f9b6ca6b20c65f16a0f9d179cd8c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 9fcb75133d81a088f1f17cfa466aa87f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -29,8 +32,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 157
   Script: {instanceID: 0}
+- Class: 196
+  Script: {instanceID: 0}
 - Class: 258
   Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Scenes/Empty.unity
 Dependencies: []

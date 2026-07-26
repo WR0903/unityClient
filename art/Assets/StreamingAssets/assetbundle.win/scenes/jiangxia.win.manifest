@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1353412369
+CRC: 2783398717
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9905f6641478aa6afbb458d8c1021661
+    Hash: 6719d962722b9b06a0215fad4c547fcc
   TypeTreeHash:
     serializedVersion: 2
-    Hash: ececdfb06eedaa2f7c34bd78a293e090
+    Hash: 89377653003032cf469f0f37e3b344a6
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 6719d962722b9b06a0215fad4c547fcc
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -33,6 +36,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 82
   Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
 - Class: 104
   Script: {instanceID: 0}
 - Class: 108
@@ -53,8 +58,11 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 238
   Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
 - Class: 1953259897
   Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Scenes/jiangxia/jiangxia.unity
 Dependencies: []

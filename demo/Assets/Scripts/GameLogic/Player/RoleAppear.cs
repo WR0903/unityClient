@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Unity.Entities;
 using UnityEngine;
 using UnityEngine.AI;
 using Object = UnityEngine.Object;
@@ -68,7 +67,6 @@ namespace GEngine
             transform.Rotate(0, 0, 0);
             transform.localScale = new Vector3(1, 1, 1);
 
-            _3dObj.AddComponent<GameObjectEntity>();
             var moveComponent = _3dObj.AddComponent<MoveComponent>();
             moveComponent.AttachRole(this);
 
