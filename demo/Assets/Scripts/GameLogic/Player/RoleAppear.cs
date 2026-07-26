@@ -96,7 +96,7 @@ namespace GEngine
         protected override void RegisterState()
         {
             RegisterStateClass(RoleStateType.Stand, new StateTemplateCreator<RoleStateType, StateTemplate<RoleStateType, RoleAppear>>(RoleStateType.Stand, () => new RoleStateStand()));
-            RegisterStateClass(RoleStateType.Move, new StateTemplateCreator<RoleStateType, StateTemplate<RoleStateType, RoleAppear>>(RoleStateType.Stand, () => new RoleStateMove()));
+            RegisterStateClass(RoleStateType.Move, new StateTemplateCreator<RoleStateType, StateTemplate<RoleStateType, RoleAppear>>(RoleStateType.Move, () => new RoleStateMove()));
         }
 
         #endregion

@@ -625,3 +625,10 @@ PlayerSettings:
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
   legacyClampBlendShapeWeights: 1
+  allowUnsafeHttpMetadatas:
+  - m_IsEnabled: 1
+    m_Domains: localhost;127.0.0.1
+    m_EnforceHttps: 0
+  - m_IsEnabled: 1
+    m_Domains: '*'
+    m_EnforceHttps: 0

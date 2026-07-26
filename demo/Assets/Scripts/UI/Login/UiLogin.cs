@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using LitJson;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 namespace GEngine
@@ -95,19 +94,46 @@ namespace GEngine
         private IEnumerator GetServer()
         {
             var globalObj = Global.GetInstance();
-            UnityWebRequest webRequest = UnityWebRequest.Get($"http://{globalObj.GetServerIp()}:{globalObj.GetServerPort()}/login");
-            webRequest.SetRequestHeader("Content-Type", "application/json;charset=utf-8");
-            webRequest.downloadHandler = new DownloadHandlerBuffer();
-            yield return webRequest.SendWebRequest();
-            if (webRequest.result != UnityWebRequest.Result.Success)
+            string url = $"http://{globalObj.GetServerIp()}:{globalObj.GetServerPort()}/login";
+            
+            // Unity 2022 默认禁止 HTTP 明文请求，使用 HttpWebRequest 绕过限制
+            string resultText = null;
+            string errorMsg = null;
+            
+            var thread = new System.Threading.Thread(() =>
             {
-                UnityEngine.Debug.Log(webRequest.error);
-                UiMgr.GetInstance().OpenModalBox1("登录消息", $"{webRequest.error}", Show);
+                try
+                {
+                    var httpReq = (System.Net.HttpWebRequest)System.Net.WebRequest.Create(url);
+                    httpReq.Method = "GET";
+                    httpReq.ContentType = "application/json;charset=utf-8";
+                    httpReq.Timeout = 10000;
+                    using (var response = (System.Net.HttpWebResponse)httpReq.GetResponse())
+                    using (var stream = response.GetResponseStream())
+                    using (var reader = new System.IO.StreamReader(stream, System.Text.Encoding.UTF8))
+                    {
+                        resultText = reader.ReadToEnd();
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    errorMsg = ex.Message;
+                }
+            });
+            thread.Start();
+            
+            while (thread.IsAlive)
+                yield return null;
+            
+            if (errorMsg != null)
+            {
+                UnityEngine.Debug.Log(errorMsg);
+                UiMgr.GetInstance().OpenModalBox1("登录消息", $"{errorMsg}", Show);
             }
             else
             {
-                UnityEngine.Debug.Log(webRequest.downloadHandler.text);
-                string result = webRequest.downloadHandler.text;
+                UnityEngine.Debug.Log(resultText);
+                string result = resultText;
                 var jsonData = JsonMapper.ToObject<HttpJson>(result);
                 if (jsonData.returncode == 0)
                 {
@@ -117,7 +143,7 @@ namespace GEngine
                 }
                 else
                 {
-                    UnityEngine.Debug.Log(webRequest.error);
+                    UnityEngine.Debug.Log(errorMsg);
                     UiMgr.GetInstance().OpenModalBox1("登录消息", $"获取服务器失败：{jsonData.returncode}", Show);
                 }
             }

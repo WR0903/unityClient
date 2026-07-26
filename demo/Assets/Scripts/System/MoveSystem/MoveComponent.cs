@@ -37,7 +37,7 @@ namespace GEngine
             var navMeshAgent = GetComponent<NavMeshAgent>();
             navMeshAgent.speed = 2f;
             navMeshAgent.acceleration = 360;
-            navMeshAgent.angularSpeed = 1f;
+            navMeshAgent.angularSpeed = 360;
             navMeshAgent.stoppingDistance = 0.1f;
 
             CoroutineEngine.GetInstance().Execute(TimerChange());
@@ -55,8 +55,25 @@ namespace GEngine
         void Update()
         {
             var navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
+
+            // 消费 CornerPoints：服务器同步过来的路径点，驱动 NavMeshAgent 移动到最终目的地
+            if (CornerPoints.Count > 0)
+            {
+                var lastPoint = CornerPoints[CornerPoints.Count - 1];
+                var targetPosition = new Vector3(lastPoint.X, lastPoint.Y, lastPoint.Z);
+                navMeshAgent.SetDestination(targetPosition);
+                CornerPoints.Clear();
+
+                // 切换到移动状态
+                _role?.ChangeState(RoleStateType.Move);
+            }
+
             if (!navMeshAgent.hasPath)
+            {
+                // 没有路径，切换回站立状态
+                _role?.ChangeState(RoleStateType.Stand);
                 return;
+            }
 
             Vector3 comparePos;
             if (navMeshAgent.path.corners.Length > 2)

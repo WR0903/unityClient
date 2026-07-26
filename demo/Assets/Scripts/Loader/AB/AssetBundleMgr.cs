@@ -273,9 +273,9 @@ namespace GEngine {
 
                 // 三次都没有下载下来
                 if ( info.ErrorCount >= MaxTryNum ) {
-                    GameLogger.GetInstance( )
-                        .Output( string.Format( "!!!!! AssetBundle CreateFromWWW failed: {0}\n\t ErrorCount >= {1}",
-                            info.Url, MaxTryNum ) );
+                GameLogger.GetInstance( )
+                    .Output( string.Format( "!!!!! AssetBundle load failed: {0}\n\t ErrorCount >= {1}",
+                        info.Url, MaxTryNum ) );
                     _loadingQueue.RemoveAt( index );
                     continue;
                 }
@@ -326,10 +326,13 @@ namespace GEngine {
             if ( req.result != UnityWebRequest.Result.Success ) {
                 GameLogger.GetInstance( ).Trace( "AssetBundle load failed: {0}\n\t{1}", url, req.error );
                 UrlLoadCompleted( info, null );
+                req.Dispose();
                 yield break;
             }
 
             AssetBundle ab = DownloadHandlerAssetBundle.GetContent( req );
+            req.Dispose();
+
             if ( ab == null ) {
                 GameLogger.GetInstance( ).Trace( "AssetBundle load failed: {0}\n\tab == null", url );
                 UrlLoadCompleted( info, null );

@@ -66,61 +66,61 @@
     <Compile Include="Assets\Scripts\GameLogic\Player\Player.cs" />
     <Compile Include="Assets\Scripts\EventDispatcher\EventDispatcher.cs" />
     <Compile Include="Assets\Scripts\GameLogic\World\World.cs" />
-    <Compile Include="Assets\Scripts\UI\Base\UiSubComponent.cs" />
-    <Compile Include="Assets\Scripts\UI\Base\UiUtil.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Player\RoleAppear.cs" />
-    <Compile Include="Assets\Scripts\Loader\AB\Request\AsyncLoadRequest.cs" />
-    <Compile Include="Assets\Scripts\Loader\Op\AsyncLoaderCache.cs" />
-    <Compile Include="Assets\Scripts\Network\Message\Db.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\GameMain.cs" />
-    <Compile Include="Assets\Scripts\Common\CoroutineEngine.cs" />
-    <Compile Include="Assets\Scripts\UI\Roles\UiRoles.cs" />
-    <Compile Include="Assets\Scripts\Network\Message\ProtoId.cs" />
-    <Compile Include="Assets\Scripts\Loader\Op\AsyncLoaderProgress.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Player\RoleState\RoleStateType.cs" />
-    <Compile Include="Assets\Scripts\Network\NetworkMgr.cs" />
-    <Compile Include="Assets\Scripts\Resource\ResourceWorld.cs" />
-    <Compile Include="Assets\Scripts\System\MoveSystem\MoveComponent.cs" />
-    <Compile Include="Assets\Scripts\Common\SnObject.cs" />
-    <Compile Include="Assets\Scripts\Common\StateTemplate.cs" />
-    <Compile Include="Assets\Scripts\GameLogic\Camera\CameraFollowBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Loader\Op\AsyncLoader.cs" />
-    <Compile Include="Assets\Scripts\Common\Util.cs" />
-    <Compile Include="Assets\Scripts\UI\Base\UiBase.cs" />
-    <Compile Include="Assets\Scripts\EventDispatcher\MessagePackDispatcher.cs" />
-    <Compile Include="Assets\Scripts\UI\Roles\UiRoleSelect.cs" />
-    <Compile Include="Assets\Scripts\Common\SingletonObject.cs" />
-    <Compile Include="Assets\Scripts\Resource\Base\EditorProperty.cs" />
-    <Compile Include="Assets\Scripts\Loader\AB\AssetBundleMgr.cs" />
     <Compile Include="Assets\Scripts\GameLogic\World\Gesturel.cs" />
+    <Compile Include="Assets\Scripts\UI\Base\UiSubComponent.cs" />
     <Compile Include="Assets\Scripts\UI\UiMgrUpdate.cs" />
     <Compile Include="Assets\Scripts\Resource\Base\ReferenceMgr.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Player\RoleState\RoleStateStand.cs" />
     <Compile Include="Assets\Scripts\UI\Roles\UiRoleBase.cs" />
+    <Compile Include="Assets\Scripts\UI\Base\UiUtil.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\Player\RoleAppear.cs" />
     <Compile Include="Assets\Scripts\UI\Login\UiLogin.cs" />
     <Compile Include="Assets\Scripts\UI\Roles\UiRoleSelectCharacter.cs" />
+    <Compile Include="Assets\Scripts\Loader\AB\Request\AsyncLoadRequest.cs" />
     <Compile Include="Assets\Scripts\Resource\Base\Reference.cs" />
+    <Compile Include="Assets\Scripts\Loader\Op\AsyncLoaderCache.cs" />
+    <Compile Include="Assets\Scripts\Network\Message\Db.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\GameMain.cs" />
     <Compile Include="Assets\Scripts\UI\UiMgr.cs" />
+    <Compile Include="Assets\Scripts\Common\CoroutineEngine.cs" />
     <Compile Include="Assets\Scripts\Loader\AB\Request\AsyncLoadCallBack.cs" />
+    <Compile Include="Assets\Scripts\UI\Roles\UiRoles.cs" />
     <Compile Include="Assets\Scripts\UI\Base\UiFactory.cs" />
     <Compile Include="Assets\Scripts\UI\Base\UiType.cs" />
+    <Compile Include="Assets\Scripts\Network\Message\ProtoId.cs" />
+    <Compile Include="Assets\Scripts\Loader\Op\AsyncLoaderProgress.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\Player\RoleState\RoleStateType.cs" />
+    <Compile Include="Assets\Scripts\Network\NetworkMgr.cs" />
     <Compile Include="Assets\Scripts\ReadyToLoad.cs" />
     <Compile Include="Assets\Scripts\UI\Roles\UiRoleCreate.cs" />
     <Compile Include="Assets\Scripts\Resource\Base\CvsAnalysis.cs" />
+    <Compile Include="Assets\Scripts\Resource\ResourceWorld.cs" />
     <Compile Include="Assets\Scripts\Global.cs" />
     <Compile Include="Assets\Scripts\UI\Modal\ModalBox1.cs" />
+    <Compile Include="Assets\Scripts\System\MoveSystem\MoveComponent.cs" />
     <Compile Include="Assets\Scripts\Common\GameLogger.cs" />
+    <Compile Include="Assets\Scripts\Common\SnObject.cs" />
+    <Compile Include="Assets\Scripts\Common\StateTemplate.cs" />
     <Compile Include="Assets\Scripts\UI\UiComplexType.cs" />
     <Compile Include="Assets\Scripts\Resource\ResourceAll.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\Camera\CameraFollowBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Loader\Op\AsyncLoader.cs" />
     <Compile Include="Assets\Scripts\UI\Modal\ModalBox0.cs" />
     <Compile Include="Assets\Scripts\Common\SingletonBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Common\Util.cs" />
     <Compile Include="Assets\Scripts\Network\Message\Msg.cs" />
     <Compile Include="Assets\Scripts\Loader\AB\AssetBundleCache.cs" />
     <Compile Include="Assets\Scripts\System\UpdateSystem\RoleUpdateComponent.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Account.cs" />
+    <Compile Include="Assets\Scripts\UI\Base\UiBase.cs" />
+    <Compile Include="Assets\Scripts\EventDispatcher\MessagePackDispatcher.cs" />
     <Compile Include="Assets\Scripts\Network\Packet.cs" />
     <Compile Include="Assets\Scripts\UI\Load\UiLoadBar.cs" />
+    <Compile Include="Assets\Scripts\UI\Roles\UiRoleSelect.cs" />
+    <Compile Include="Assets\Scripts\Common\SingletonObject.cs" />
+    <Compile Include="Assets\Scripts\Resource\Base\EditorProperty.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Player\RoleState\RoleStateMove.cs" />
+    <Compile Include="Assets\Scripts\Loader\AB\AssetBundleMgr.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -987,76 +987,28 @@
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Services.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Environments">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.SecurityCore">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing.Codeless">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Services.Core.Analytics">
-      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.Purchasing">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Purchasing.SecurityStub">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Purchasing.Common">
@@ -1083,16 +1035,24 @@
       <HintPath>Library\ScriptAssemblies\Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
       <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Timeline">
@@ -1103,12 +1063,40 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Components.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Services.Analytics">
       <HintPath>Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.Codeless.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.Purchasing.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
@@ -1119,8 +1107,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Purchasing.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
