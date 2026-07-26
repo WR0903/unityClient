@@ -109,32 +109,6 @@ ReadyToLoad.Update()       状态机驱动初始化流程
 | 游戏逻辑 | `GameLogic/` | `GameMain.cs`、`World.cs`、`Player.cs` | 游戏主循环、世界管理、玩家角色 |
 | 组件系统 | `System/` | `MoveComponent.cs`、`RoleUpdateComponent.cs` | 角色移动、状态更新 |
 
-## 快速开始
-
-### 1. 克隆仓库
-
-```bash
-git clone https://github.com/WR0903/unityClient.git
-```
-
-### 2. 用 Unity 2022.3 LTS 打开工程
-
-1. 安装 [Unity Hub](https://unity.com/download)
-2. 通过 Unity Hub 安装 **Unity 2022.3 LTS**
-3. 用 Unity Hub 添加并打开 `demo/` 工程
-
-### 3. 配置服务器
-
-在 `demo/` 工程的 `ReadyToLoad` 组件（挂在场景 GameObject 上）的 Inspector 中配置：
-- `ResPath`：AssetBundle 资源路径
-- `ReferencePath`：CSV 配置表路径
-- `ServerIp`：登录服务器 IP
-- `ServerPort`：登录服务器端口
-
-### 4. 运行
-
-点击 Unity 的 Play 按钮即可启动游戏。
-
 ## 开发规范
 
 - 所有游戏代码在 `GEngine` 命名空间下
@@ -142,13 +116,3 @@ git clone https://github.com/WR0903/unityClient.git
 - UI 界面继承 `UiBase`，通过 `UiFactory` 创建
 - 网络消息使用 Protobuf，消息 ID 定义在 `ProtoId.cs`
 - 资源通过 `AssetBundleMgr.AsyncLoad()` 异步加载
-
-## 技术栈
-
-- **Unity 2022.3 LTS** 游戏引擎
-- **C# 9.0** 编程语言
-- **Protobuf** 网络协议序列化
-- **LitJson** JSON 解析
-- **NavMesh** 寻路
-- **AssetBundle** 资源管理
-- **WPF + MahApps.Metro** 配置表编辑器
