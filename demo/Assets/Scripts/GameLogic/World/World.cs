@@ -76,6 +76,11 @@ namespace GEngine
         {
             Proto.Move moveProto = msg as Proto.Move;
             ulong playerSn = moveProto.PlayerSn;
+
+            // 过滤掉自己的移动广播（自己的移动由本地NavMeshAgent驱动）
+            if (playerSn == GameMain.GetInstance().MainPlayer.Sn)
+                return;
+
             if (!_players.ContainsKey(playerSn))
             {
                 UnityEngine.Debug.LogWarning($"sync move failed. can't find player. sn:{playerSn}");
@@ -83,7 +88,17 @@ namespace GEngine
             }
 
             var player = _players[playerSn];
-            var moveComponent = player.GetGameObject().GetComponent<MoveComponent>();
+            var gameObj = player.GetGameObject();
+            if (gameObj == null)
+            {
+                UnityEngine.Debug.LogWarning($"sync move failed. game object not loaded. sn:{playerSn}");
+                return;
+            }
+
+            var moveComponent = gameObj.GetComponent<MoveComponent>();
+            if (moveComponent == null)
+                return;
+
             moveComponent.CornerPoints.AddRange(moveProto.Position);
         }
 
