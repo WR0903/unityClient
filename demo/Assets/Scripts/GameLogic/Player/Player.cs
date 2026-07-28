@@ -55,7 +55,7 @@ namespace GEngine
             // 能移动到该点
             if (navMeshPath.status != NavMeshPathStatus.PathPartial)
             {
-                //navMeshAgent.SetDestination(destPosition);
+                navMeshAgent.SetDestination(destPosition);
                 Proto.Move proto = new Proto.Move();
                 foreach (Vector3 one in navMeshPath.corners)
                 {
