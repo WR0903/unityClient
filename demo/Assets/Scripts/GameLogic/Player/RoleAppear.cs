@@ -97,6 +97,7 @@ namespace GEngine
         {
             RegisterStateClass(RoleStateType.Stand, new StateTemplateCreator<RoleStateType, StateTemplate<RoleStateType, RoleAppear>>(RoleStateType.Stand, () => new RoleStateStand()));
             RegisterStateClass(RoleStateType.Move, new StateTemplateCreator<RoleStateType, StateTemplate<RoleStateType, RoleAppear>>(RoleStateType.Move, () => new RoleStateMove()));
+            // RegisterStateClass(RoleStateType.Jump, new StateTemplateCreator<RoleStateType, StateTemplate<RoleStateType, RoleAppear>>(RoleStateType.Jump, () => new RoleStateJump()));
         }
 
         #endregion

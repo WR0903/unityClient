@@ -10,6 +10,7 @@ namespace GEngine
     {
         Stand,
         Move,
+        Jump,
     }
 
     abstract class RoleState : StateTemplate<RoleStateType, RoleAppear>

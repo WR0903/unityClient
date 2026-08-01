@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Loader\Op\AsyncLoaderProgress.cs" />
     <Compile Include="Assets\Scripts\GameLogic\Player\RoleState\RoleStateType.cs" />
     <Compile Include="Assets\Scripts\Network\NetworkMgr.cs" />
+    <Compile Include="Assets\Scripts\GameLogic\Player\RoleState\RoleStateJump.cs" />
     <Compile Include="Assets\Scripts\ReadyToLoad.cs" />
     <Compile Include="Assets\Scripts\UI\Roles\UiRoleCreate.cs" />
     <Compile Include="Assets\Scripts\Resource\Base\CvsAnalysis.cs" />
