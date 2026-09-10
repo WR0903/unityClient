@@ -7,7 +7,7 @@ GitHub 仓库：https://github.com/WR0903/unityClient
 
 | 项 | 版本 |
 |---|---|
-| Unity | 2022.3 LTS |
+| Unity | 2023.1.1f1 |
 | .NET | .NET Standard 2.1 |
 | C# | 9.0 |
 | 构建 | IL2CPP / Mono |
