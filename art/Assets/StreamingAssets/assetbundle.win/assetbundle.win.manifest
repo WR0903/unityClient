@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 1058613326
+CRC: 1054284349
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -49,4 +49,7 @@ AssetBundleManifest:
       Dependencies: {}
     Info_15:
       Name: scenes/empty.win
+      Dependencies: {}
+    Info_16:
+      Name: scenes/gamescene.win
       Dependencies: {}
